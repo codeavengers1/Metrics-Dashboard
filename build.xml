@@ -131,9 +131,9 @@
   <property name="app.version"   value="0.1-dev"/>
   <property name="build.home"    value="${basedir}/MetricsApp/build"/>
   <property name="catalina.home" value="../../../.."/> <!-- UPDATE THIS! -->
-  <property name="jboss.home" 	 value="C:/jboss-as-7.1.1.Final"/> <!-- UPDATE THIS! -->
+  <!--property name="jboss.home" 	 value="C:/jboss-as-7.1.1.Final"/>  UPDATE THIS! -->
   <!--<property name="dist.home"     value="${basedir}/dist"/>-->
-  <property name="dist.home"     value="C:/wildfly/wildfly-10.0.0.Beta2/standalone/deployments"/> 
+  <!--<property name="dist.home"     value="C:/wildfly/wildfly-10.0.0.Beta2/standalone/deployments"/>-->
 	
   <property name="docs.home"     value="${basedir}/MetricsApp/docs"/>
   <property name="manager.url"   value="http://localhost:8080/manager"/>
