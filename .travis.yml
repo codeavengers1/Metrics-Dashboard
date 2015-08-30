@@ -1,2 +1,2 @@
 language: java
-install: ant clean,complie,dist
+install: ant clean,compile,dist
