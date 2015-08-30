@@ -126,14 +126,14 @@
 
 -->
 
-  <property name="app.name"      value="firatApp"/>
+  <property name="app.name"      value="matrixAnalyser"/>
   <property name="app.path"      value="/${app.name}"/>
   <property name="app.version"   value="0.1-dev"/>
   <property name="build.home"    value="${basedir}/MetricsApp/build"/>
   <property name="catalina.home" value="../../../.."/> <!-- UPDATE THIS! -->
-
-  <property name="dist.home"     value="${basedir}/MetricsApp/dist"/>
-  <!--<property name="dist.home"     value="C:/wildfly/wildfly-10.0.0.Beta2/standalone/deployments"/>-->
+	<!--<property name="jboss.home" 	 value="C:/jboss-as-7.1.1.Final"/> -->
+  <!--<property name="dist.home"     value="${basedir}/dist"/>-->
+  <property name="dist.home"     value="${basedir}/apache-tomcat-8.0.26/webapps"/> 
 	
   <property name="docs.home"     value="${basedir}/MetricsApp/docs"/>
   <property name="manager.url"   value="http://localhost:8080/manager"/>
@@ -251,21 +251,15 @@
     </fileset>
 -->
   	
-  	<pathelement location="${basedir}"></pathelement>
-  	     <!-- <fileset dir="${jboss.home}/lib">
-  	         <include name="**/*.jar"></include>
-  	      </fileset>
-  	      <fileset dir="${jboss.home}/server/${jboss.server.config}/lib">
-  	         <include name="**/*.jar"></include>
-  	      </fileset>
+  	<pathelement location="${basedir}/MetricsApp"></pathelement>
   	
-  		  <fileset dir="${jboss.home}/bin/client"> -->
+  	<!-- <fileset dir="${jboss.home}/bin/client"> 
   	          <include name="**/*.jar"/> 
   	       </fileset> 
   			<fileset dir="${jboss.home}/modules/javax/servlet/api/main"> 
   	  	          <include name="**/*.jar"/> 
-  	  	       </fileset>
-  			<fileset dir="C:/Project/firstApp/web/WEB-INF/lib"> 
+  	  	       </fileset>-->
+  			<fileset dir="${basedir}/MetricsApp/web/WEB-INF/lib"> 
   	  	          <include name="**/*.jar"/> 
   	  	       </fileset>
   	       <pathelement location="${src.dir}"/> 
@@ -305,7 +299,7 @@
   <target name="clean"
    description="Delete old build and dist directories">
     <delete dir="${build.home}"/>
-    <delete dir="${dist.home}"/>
+  	<!-- <delete dir="${dist.home}"/>-->
   </target>
 
 
@@ -369,7 +363,7 @@
     </copy>-->
 
     <!-- Create application JAR file -->
-    <jar jarfile="${dist.home}/${app.name}-${app.version}.war"
+    <jar jarfile="${dist.home}/${app.name}.war"
          basedir="${build.home}"/>
 
     <!-- Copy additional files to ${dist.home} as necessary -->

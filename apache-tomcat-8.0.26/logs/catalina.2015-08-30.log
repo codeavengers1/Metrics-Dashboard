@@ -1,0 +1,199 @@
+30-Aug-2015 15:51:09.644 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.26
+30-Aug-2015 15:51:09.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 18 2015 11:38:37 UTC
+30-Aug-2015 15:51:09.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.26.0
+30-Aug-2015 15:51:09.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows Server 2012 R2
+30-Aug-2015 15:51:09.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+30-Aug-2015 15:51:09.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Aug-2015 15:51:09.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_51\jre
+30-Aug-2015 15:51:09.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_51-b16
+30-Aug-2015 15:51:09.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-Aug-2015 15:51:09.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.0.26
+30-Aug-2015 15:51:09.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.0.26
+30-Aug-2015 15:51:09.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.0.26\conf\logging.properties
+30-Aug-2015 15:51:09.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Aug-2015 15:51:09.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\apache-tomcat-8.0.26\endorsed
+30-Aug-2015 15:51:09.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.0.26
+30-Aug-2015 15:51:09.655 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.0.26
+30-Aug-2015 15:51:09.656 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.0.26\temp
+30-Aug-2015 15:51:09.657 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_51\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_51\bin;C:\mongodb\bin;C:\Program Files (x86)\CloudFoundry;.
+30-Aug-2015 15:51:11.287 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Aug-2015 15:51:11.753 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Aug-2015 15:51:11.763 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2015 15:51:11.775 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Aug-2015 15:51:11.778 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3955 ms
+30-Aug-2015 15:51:11.864 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+30-Aug-2015 15:51:11.866 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.26
+30-Aug-2015 15:51:11.900 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\apache-tomcat-8.0.26\webapps\docs
+30-Aug-2015 15:51:12.663 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [196] milliseconds.
+30-Aug-2015 15:51:12.730 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\apache-tomcat-8.0.26\webapps\docs has finished in 831 ms
+30-Aug-2015 15:51:12.732 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\apache-tomcat-8.0.26\webapps\examples
+30-Aug-2015 15:51:13.475 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\apache-tomcat-8.0.26\webapps\examples has finished in 744 ms
+30-Aug-2015 15:51:13.477 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\apache-tomcat-8.0.26\webapps\host-manager
+30-Aug-2015 15:51:13.565 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\apache-tomcat-8.0.26\webapps\host-manager has finished in 86 ms
+30-Aug-2015 15:51:13.570 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\apache-tomcat-8.0.26\webapps\manager
+30-Aug-2015 15:51:13.628 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\apache-tomcat-8.0.26\webapps\manager has finished in 59 ms
+30-Aug-2015 15:51:13.631 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\apache-tomcat-8.0.26\webapps\ROOT
+30-Aug-2015 15:51:13.662 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\apache-tomcat-8.0.26\webapps\ROOT has finished in 31 ms
+30-Aug-2015 15:51:13.672 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Aug-2015 15:51:13.684 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2015 15:51:13.689 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1910 ms
+30-Aug-2015 16:04:34.633 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+30-Aug-2015 16:04:35.201 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/examples]
+30-Aug-2015 16:04:35.734 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/host-manager]
+30-Aug-2015 16:04:36.257 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/manager]
+30-Aug-2015 16:04:36.789 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/docs]
+30-Aug-2015 16:04:36.841 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\apache-tomcat-8.0.26\webapps\firatApp-0.1-dev.war
+30-Aug-2015 16:04:38.040 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\apache-tomcat-8.0.26\webapps\firatApp-0.1-dev.war has finished in 1,198 ms
+30-Aug-2015 16:10:18.617 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/firatApp-0.1-dev]
+30-Aug-2015 16:10:18.681 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [cluster-1-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(ServerMonitor.java:176)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForNext(ServerMonitor.java:157)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.run(ServerMonitor.java:123)
+ java.lang.Thread.run(Thread.java:745)
+30-Aug-2015 16:10:18.692 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [MongoCleaner1977557661] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.mongodb.Mongo$CursorCleanerThread.run(Mongo.java:820)
+30-Aug-2015 16:10:18.699 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [cluster-2-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(ServerMonitor.java:176)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForNext(ServerMonitor.java:157)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.run(ServerMonitor.java:123)
+ java.lang.Thread.run(Thread.java:745)
+30-Aug-2015 16:10:18.708 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [MongoCleaner398710271] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.mongodb.Mongo$CursorCleanerThread.run(Mongo.java:820)
+30-Aug-2015 16:10:18.713 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [cluster-3-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(ServerMonitor.java:176)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForNext(ServerMonitor.java:157)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.run(ServerMonitor.java:123)
+ java.lang.Thread.run(Thread.java:745)
+30-Aug-2015 16:10:18.723 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [MongoCleaner705097666] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.mongodb.Mongo$CursorCleanerThread.run(Mongo.java:820)
+30-Aug-2015 16:10:18.729 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [cluster-4-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(ServerMonitor.java:176)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForNext(ServerMonitor.java:157)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.run(ServerMonitor.java:123)
+ java.lang.Thread.run(Thread.java:745)
+30-Aug-2015 16:10:18.739 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [MongoCleaner70932260] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.mongodb.Mongo$CursorCleanerThread.run(Mongo.java:820)
+30-Aug-2015 16:10:18.744 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [cluster-5-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(ServerMonitor.java:176)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForNext(ServerMonitor.java:157)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.run(ServerMonitor.java:123)
+ java.lang.Thread.run(Thread.java:745)
+30-Aug-2015 16:10:18.754 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [MongoCleaner896800336] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.mongodb.Mongo$CursorCleanerThread.run(Mongo.java:820)
+30-Aug-2015 16:10:18.757 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [cluster-6-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(ServerMonitor.java:176)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForNext(ServerMonitor.java:157)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.run(ServerMonitor.java:123)
+ java.lang.Thread.run(Thread.java:745)
+30-Aug-2015 16:10:18.766 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [MongoCleaner1679140971] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.mongodb.Mongo$CursorCleanerThread.run(Mongo.java:820)
+30-Aug-2015 16:10:18.770 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [cluster-7-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(ServerMonitor.java:176)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForNext(ServerMonitor.java:157)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.run(ServerMonitor.java:123)
+ java.lang.Thread.run(Thread.java:745)
+30-Aug-2015 16:10:18.780 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [MongoCleaner2039108218] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.mongodb.Mongo$CursorCleanerThread.run(Mongo.java:820)
+30-Aug-2015 16:10:18.785 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [cluster-8-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(ServerMonitor.java:176)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForNext(ServerMonitor.java:157)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.run(ServerMonitor.java:123)
+ java.lang.Thread.run(Thread.java:745)
+30-Aug-2015 16:10:18.796 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [MongoCleaner26359553] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.mongodb.Mongo$CursorCleanerThread.run(Mongo.java:820)
+30-Aug-2015 16:10:18.802 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [cluster-9-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(ServerMonitor.java:176)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.waitForNext(ServerMonitor.java:157)
+ com.mongodb.ServerMonitor$ServerMonitorRunnable.run(ServerMonitor.java:123)
+ java.lang.Thread.run(Thread.java:745)
+30-Aug-2015 16:10:18.812 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [firatApp-0.1-dev] appears to have started a thread named [MongoCleaner1945191205] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.mongodb.Mongo$CursorCleanerThread.run(Mongo.java:820)
+30-Aug-2015 16:12:38.844 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war
+30-Aug-2015 16:12:39.913 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war has finished in 1,069 ms
+30-Aug-2015 16:16:43.736 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Aug-2015 16:16:43.740 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2015 16:16:43.742 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+30-Aug-2015 16:16:43.774 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Aug-2015 16:16:43.780 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2015 16:16:43.788 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Aug-2015 16:16:43.791 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2015 16:52:46.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.26
+30-Aug-2015 16:52:46.431 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 18 2015 11:38:37 UTC
+30-Aug-2015 16:52:46.432 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.26.0
+30-Aug-2015 16:52:46.432 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows Server 2012 R2
+30-Aug-2015 16:52:46.433 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+30-Aug-2015 16:52:46.433 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Aug-2015 16:52:46.434 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_51\jre
+30-Aug-2015 16:52:46.434 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_51-b16
+30-Aug-2015 16:52:46.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-Aug-2015 16:52:46.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.0.26
+30-Aug-2015 16:52:46.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.0.26
+30-Aug-2015 16:52:46.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.0.26\conf\logging.properties
+30-Aug-2015 16:52:46.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Aug-2015 16:52:46.439 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\apache-tomcat-8.0.26\endorsed
+30-Aug-2015 16:52:46.440 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.0.26
+30-Aug-2015 16:52:46.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.0.26
+30-Aug-2015 16:52:46.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.0.26\temp
+30-Aug-2015 16:52:46.442 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_51\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_51\bin;C:\mongodb\bin;C:\Program Files (x86)\CloudFoundry;.
+30-Aug-2015 16:52:46.959 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Aug-2015 16:52:47.242 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Aug-2015 16:52:47.247 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2015 16:52:47.251 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Aug-2015 16:52:47.252 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2209 ms
+30-Aug-2015 16:52:47.315 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+30-Aug-2015 16:52:47.316 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.26
+30-Aug-2015 16:52:47.427 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war
+30-Aug-2015 16:52:49.423 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Aug-2015 16:52:49.660 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [136] milliseconds.
+30-Aug-2015 16:52:49.747 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war has finished in 2,321 ms
+30-Aug-2015 16:52:49.753 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Aug-2015 16:52:49.769 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+30-Aug-2015 16:52:49.772 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2519 ms
+30-Aug-2015 17:03:19.974 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/matrixAnalyser]
+30-Aug-2015 17:03:20.553 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war
+30-Aug-2015 17:03:21.662 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war has finished in 1,109 ms
+30-Aug-2015 17:06:21.706 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/matrixAnalyser]
+30-Aug-2015 17:06:22.122 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war
+30-Aug-2015 17:06:23.193 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war has finished in 1,071 ms
+30-Aug-2015 17:21:33.446 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/matrixAnalyser]
+30-Aug-2015 17:21:33.883 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war
+30-Aug-2015 17:21:35.081 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war has finished in 1,198 ms
+30-Aug-2015 17:33:05.239 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/matrixAnalyser]
+30-Aug-2015 17:33:05.487 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war
+30-Aug-2015 17:33:06.550 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\apache-tomcat-8.0.26\webapps\matrixAnalyser.war has finished in 1,064 ms
