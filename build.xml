@@ -282,9 +282,10 @@
 
 -->
 
-  <target name="all" depends="clean,compile"
+  <target name="all" depends="clean,compile,dist"
    description="Clean build and dist directories, then compile"/>
-
+	  <target name="test" depends="clean,compile,dist"
+   description="Clean build and dist directories, then compile"/>
 
 
 <!-- ==================== Clean Target ==================================== -->
