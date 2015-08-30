@@ -1,1 +1,2 @@
-language: java
+lalanguage: java
+install: ant resolve
