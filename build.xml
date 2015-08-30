@@ -135,10 +135,10 @@
   <!--<property name="dist.home"     value="${basedir}/dist"/>-->
   <property name="dist.home"     value="C:/wildfly/wildfly-10.0.0.Beta2/standalone/deployments"/> 
 	
-  <property name="docs.home"     value="${basedir}/docs"/>
+  <property name="docs.home"     value="${basedir}/MetricsApp/docs"/>
   <property name="manager.url"   value="http://localhost:8080/manager"/>
-  <property name="src.home"      value="${basedir}/src"/>
-  <property name="web.home"      value="${basedir}/web"/>
+  <property name="src.home"      value="${basedir}/MetricsApp/src"/>
+  <property name="web.home"      value="${basedir}/MetricsApp/web"/>
 
 
 <!-- ================== Custom Ant Task Definitions ======================= -->
