@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class ReadStringFromFile 
@@ -25,51 +26,79 @@ public class ReadStringFromFile
 			if(inputObj.has("date") && inputObj.get("date")!=null)
 				date = inputObj.get("date").toString();
 		}catch(Exception e1){}
-		int lineCount = 0;
-		String FindClause1 = "METRICS_LOGS";
-		FindClause1 = filter;
-		File file = new File("C:/Users/Administrator/Desktop/Test.log");
-		List<String> list = new ArrayList<String>();
-		String[] name = new String[]{"TITLE","WR_NUM", "FILENAME","FILTER", "DATE", "COUNT"};
-  	  	//String[] value = new String[]{"Rec1", "TestWR", "Error_log", "Keyword", "27/09/1991", "1"};
-		
-		
+		if(!fileName.equalsIgnoreCase("")){//do search from file and store result in DB.
+			int lineCount = 0;
+			String FindClause1 = "METRICS_LOGS";
+			FindClause1 = filter;
+			File file = new File("C:/Users/Administrator/Desktop/Test.log");
+			List<String> list = new ArrayList<String>();
+			String[] name = new String[]{"TITLE","WR_NUM", "FILENAME","FILTER", "DATE", "COUNT"};
+	  	  	//String[] value = new String[]{"Rec1", "TestWR", "Error_log", "Keyword", "27/09/1991", "1"};
 
-		//	readResource();
-		try  {
-			BufferedReader br = new BufferedReader(new FileReader(file));
-			String line;
-			while ((line = br.readLine()) != null) 
-			{
-			    // process the line.
-				if( line.toUpperCase().indexOf(FindClause1.toUpperCase()) != -1)
+			//	readResource();
+			try  {
+				BufferedReader br = new BufferedReader(new FileReader(file));
+				String line;
+				String[] fAray = filter.split("\\|");
+				while ((line = br.readLine()) != null) 
 				{
-					lineCount++;
-					//list.add(line);
-					line += System.getProperty("line.separator");
-					useFileWriter(line, FILEPATH );
+				    // process the line.
+					boolean notFound = false;
+					for(int i=0;i<fAray.length;i++){
+						if( line.toUpperCase().indexOf(fAray[i].toUpperCase()) == -1){
+							notFound = true;
+							break;
+						}
+					}
+					
+					//if( line.toUpperCase().indexOf(FindClause1.toUpperCase()) != -1)
+					if( !notFound)
+					{
+						lineCount++;
+						//list.add(line);
+						line += System.getProperty("line.separator");
+						useFileWriter(line, FILEPATH );
+					}
 				}
 			}
+			catch(FileNotFoundException e)
+			{
+				System.out.println("File " + file.getAbsolutePath() + " could not be found on filesystem");
+			}
+			catch(IOException ioe)
+			{
+				System.out.println("Exception while reading the file" + ioe);
+			}
+			//fileWriter("TEST LINE");
+			//bw.close();
+			//useBufferedFileOutPutStream(list,FILEPATH);
+			//title = "",wrNum = "",fileName="",filter="",date="";
+			String[] value = new String[]{title, wrNum, fileName, filter, date, lineCount+""};
+			System.out.println("Total findings are " + lineCount );
+			MongoJDBC mongoJDBC = new MongoJDBC();
+			mongoJDBC.connectdb(name , value);
+			try{
+				
+				outputObj.put("lineCount", lineCount);
+			}catch(Exception e2){}
+		}else{//no file name so pull data from DB.
+			MongoJDBC mongoJDBC = new MongoJDBC();
+			try{
+				outputObj.put("gridData", mongoJDBC.Retrivecount(title , wrNum,date));
+				String keyWords = mongoJDBC.Retrievekeyword(title , wrNum,date);
+				outputObj.put("keyWords", keyWords);
+				System.out.println("keyWords="+keyWords);
+				String dates1 = mongoJDBC.RetrieveDate(title , wrNum,date);
+				outputObj.put("dates", dates1);
+				System.out.println("dates1="+dates1);
+				String datas1 = "[1262304000000, 6], [1264982400000, 30], [1267401600000, 20], [1270080000000, 31], [1272672000000, 26], [1275350400000, 27], [1277942400000, 24], [1280620800000, 29], [1283299200000, 21], [1285891200000, 13], [1288569600000, 10], [1291161600000, 10]";
+				String datas2 = "[1262304000000, 6], [1264982400000, 30], [1267401600000, 20], [1270080000000, 31], [1272672000000, 26], [1275350400000, 27], [1277942400000, 24], [1280620800000, 29], [1283299200000, 21], [1285891200000, 13], [1288569600000, 10], [1291161600000, 10]";
+				String datas3 = "[1262304000000, 6], [1264982400000, 30], [1267401600000, 20], [1270080000000, 31], [1272672000000, 26], [1275350400000, 27], [1277942400000, 24], [1280620800000, 29], [1283299200000, 21], [1285891200000, 13], [1288569600000, 10], [1291161600000, 10]";
+				String datas = "["+datas1+"],["+datas2+"],["+datas3+"]";
+				outputObj.put("datas", datas);
+			}catch(Exception e2){}
 		}
-		catch(FileNotFoundException e)
-		{
-			System.out.println("File " + file.getAbsolutePath() + " could not be found on filesystem");
-		}
-		catch(IOException ioe)
-		{
-			System.out.println("Exception while reading the file" + ioe);
-		}
-		//fileWriter("TEST LINE");
-		//bw.close();
-		//useBufferedFileOutPutStream(list,FILEPATH);
-		//title = "",wrNum = "",fileName="",filter="",date="";
-		String[] value = new String[]{title, wrNum, fileName, filter, date, lineCount+""};
-		System.out.println("Total findings are " + lineCount );
-		MongoJDBC mongoJDBC = new MongoJDBC();
-		mongoJDBC.connectdb(name , value);
-		try{
-			outputObj.put("lineCount", lineCount);
-		}catch(Exception e2){}
+		
 		return outputObj;
 	}
 	
