@@ -129,7 +129,7 @@
   <property name="app.name"      value="firatApp"/>
   <property name="app.path"      value="/${app.name}"/>
   <property name="app.version"   value="0.1-dev"/>
-  <property name="build.home"    value="${basedir}/build"/>
+  <property name="build.home"    value="${basedir}/MetricsApp/build"/>
   <property name="catalina.home" value="../../../.."/> <!-- UPDATE THIS! -->
   <property name="jboss.home" 	 value="C:/jboss-as-7.1.1.Final"/> <!-- UPDATE THIS! -->
   <!--<property name="dist.home"     value="${basedir}/dist"/>-->
