@@ -1,2 +1,2 @@
-lalanguage: java
+language: java
 install: ant all
